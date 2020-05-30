@@ -1,0 +1,165 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+  line-height: 1;
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+//Variables
+@fontColor: #000000;
+@fontFamily: helvetica;
+
+.body {
+  max-width: 100%;
+}
+
+.font(){
+  color: @fontColor;
+  font-family: @fontFamily;
+}
+
+
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 1rem;
+  padding: 2rem;
+  
+
+  a, span {
+    text-decoration: none;
+    .font;
+    padding: .3rem;
+  }
+}
+
+.title-container {
+  background-image: url('/assets/Gustave-Courbet.jpg');
+  display: flex;
+  font-size: 2.5rem;
+  height: 700px;
+  margin: 50px;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2rem;
+  color: white;
+  border-bottom: 2px solid gray;
+
+  .container-text {
+    margin: 0 auto;
+  }
+
+  button {
+    font-size: 1rem;
+    box-shadow: 5px 5px 10px;
+  }
+}
+
+.artists-container {
+  margin: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  border-top: 2px solid gray;
+
+  .artist {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    width: 50%;
+
+    img {
+      width: 50%;
+      border-radius: 10px;
+      margin: 0 auto;
+    }
+
+    a {
+      display: flex;
+      text-decoration: none;
+      justify-content: center;
+      padding: .7rem;
+      font-size: 1rem;
+
+    }
+
+    .bio {
+      font-size: .8rem;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+
+  .title-container {
+    height: 300px;
+    width: 100%;
+    margin: 0px;
+    font-size: 1.5rem;
+
+    .container-text {
+      margin: 0 auto;
+    }
+  }
+
+  .artists-container {
+    flex-direction: column;
+    margin: 0px;
+    margin-top: 50px;
+
+    img {
+      width: 250px;
+      height: 200px;
+    }
+
+    .artist {
+      padding: 0px;
+      padding-top: 20px;
+      width: 70%;
+      margin: 0 auto;
+    }
+  }
+}
