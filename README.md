@@ -23,10 +23,26 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. How would you describe preprocessing to someone new to CSS?
+
+  - Preprocessing is a way to extend the functionality of CSS. At its core it is a scripting language that gets compiled into the regular CSS syntax. Abstractly, it is a way for us to give logic to the CSS. It allows us to use variables, functions (mix-ins), etc. like we would in a regular programming language.
+
 2. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+  - My favorite part is being able to breat the CSS down into collapseable functions that can follow along with the HTML. This makes it exponentially easier to locate errors. Struggle? Getting in the habit of making mix-ins instead of just typing out repetitive CSS.
+
 3. How would you explain the concept of a variable to someone new to programming?
+
+  - A variable is a container for a value. I would think of it as a cup. We can put lots of different things into a cup, but the cup stays the same no matter what we put into it. And we can use the same cup over and over with different things in it each time.
+  
 4. What is the purpose of using functions in code?
+
+  - There are lots of reasons to use functions in code. The most important reason, in my opinon, is reusability. We can define a function once and then call it with different (or the same) arguments every time without having to type the code each time.
+
 5. What is JSON data?
+
+JSON data is an organized collection of data that can be logically accessed. 
+
+For example, an object can have a name: value pair of 'id: 0123' and can be easily accessed by object.id (returns '0123').
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
@@ -36,17 +52,17 @@ You are expected to be able to answer questions in these areas. Your responses c
 
 Follow these steps to set up your project:
 
-- [ ] Create a forked copy of this project.
-- [ ] Add your Team Lead as collaborator on Github.
-- [ ] Clone your OWN version of the repository (Not Lambda's by mistake!).
-- [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
+- [x] Create a forked copy of this project.
+- [x] Add your Team Lead as collaborator on Github.
+- [x] Clone your OWN version of the repository (Not Lambda's by mistake!).
+- [x] Create a new branch: git checkout -b `<firstName-lastName>`.
 
 ### Task 2a:  Minimum Viable Product - Responsive Design
 
 *Before you jump in, take 10 minutes to review the code that has already been provided for you. Take time to see how the home page was built. During this time, [Review the provided design files](design/). You have been provided all content necessary in the [index.html file](index.html) and basic styling in the [index.css file](css/index.css).*
 
-* [ ] Add a viewport meta tag to the head of your index.html page.
-* [ ] Add responsive breakpoints to your code for 500px such that your styles match the [mobile design file](design/Mobile.png).
+* [x] Add a viewport meta tag to the head of your index.html page.
+* [x] Add responsive breakpoints to your code for 500px such that your styles match the [mobile design file](design/Mobile.png).
 
 ### Task 2b: Minimum Viable Product - JavaScript
 
@@ -78,6 +94,6 @@ After finishing your required elements, you can push your work further. These go
 
 Follow these steps for completing your project.
 
-- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo). **Please don't merge your own pull request**
-- [ ] Add your team lead as a reviewer on the pull-request
-- [ ] Your team lead will count the project as complete by merging the branch back into master
+- [x] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo). **Please don't merge your own pull request**
+- [x] Add your team lead as a reviewer on the pull-request
+- [x] Your team lead will count the project as complete by merging the branch back into master
